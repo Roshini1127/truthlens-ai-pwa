@@ -6,46 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#111827">
   <meta name="description" content="TruthLens AI - AI-powered fake news analysis">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="TruthLens AI">
-  <link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icon-192.png">
   <title>TruthLens AI</title>
   <style>
-    * { box-sizing: border-box; }
-    html, body {
+    body {
       margin: 0;
-      width: 100%;
-      height: 100%;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
       background: #111827;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      height: 54px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 0 14px;
       color: white;
-      background: #111827;
-      font-weight: bold;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 24px;
+      box-sizing: border-box;
     }
-    header span { color: #60a5fa; }
-    iframe {
-      display: block;
-      width: 100%;
-      height: calc(100% - 54px);
-      border: 0;
-      background: white;
+    main { max-width: 420px; }
+    img { width: 120px; height: 120px; }
+    h1 { color: #60a5fa; }
+    p { line-height: 1.6; color: #d1d5db; }
+    a {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 14px 22px;
+      border-radius: 10px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <header>🔎 <span>TruthLens AI</span></header>
- <iframe
-  <iframe
-  src="truthlens-ai-h9fzjvmgufget4s74nnsr8.streamlit.app/?embed=true"
-  title="TruthLens AI application">
-</iframe>
- </iframe>
+  <main>
+    <img src="./icon-192.png" alt="TruthLens AI logo">
+    <h1>TruthLens AI</h1>
+    <p>AI-powered fake news analysis. Check information, explore evidence, and review news sources.</p>
+    <a href="truthlens-ai-h9fzjvmgufget4s74nnsr8.streamlit.app">
+      Open TruthLens AI
+    </a>
+  </main>
 </body>
 </html>
